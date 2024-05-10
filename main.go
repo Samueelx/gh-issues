@@ -14,7 +14,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	if err := report.Report.Execute(os.Stdout, result); err != nil {
+	if err := report.IssueList.Execute(os.Stdout, result); err != nil {
 		log.Fatal(err)
 	}
 }
